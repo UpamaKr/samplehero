@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik";
+  color: #444;
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(hero-mobile2.jpg);
+  background-size: cover;
+  color: #fff;
+  /* Center the background image */
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  /* in relation to the parent size */
+  top: 50%;
+  left: 50%;
+
+  /* in relation to element size */
+  transform: translate(-50%, -50%);
+
+  /* text-align: center; */
+}
+
+.header-container-inner {
+  width: 50%;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.01;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #1a741a;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+  background-color: #f7f7f7;
+}
+
+/* *************************************** */
+/* below 1344px (84*16) */
+@media (max-width: 84.2em) {
+  header {
+    background-position: center;
+
+    /* Fix the background image in place */
+    background-attachment: fixed;
+    max-width: 120rem;
+  }
+  h1 {
+    font-size: 4.4rem;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .header-container {
+    max-width: 110rem;
+  }
+  .container {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 75.2em) {
+  h1 {
+    font-size: 3.6rem;
+    margin-bottom: 24px;
+  }
+  .header-container {
+    max-width: 100rem;
+  }
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 65.6em) {
+  h1 {
+    font-size: 3.6rem;
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .header-container {
+    max-width: 90rem;
+  }
+  .container {
+    width: 90rem;
+  }
+}
+
+@media (max-width: 65.6em) {
+  .header-container {
+    max-width: 70rem;
+  }
+  .container {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 47.8em) {
+  .header-container {
+    max-width: 55rem;
+  }
+  .container {
+    width: 55rem;
+  }
+  .header-container-inner {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 47.8em) {
+  .header-container {
+    max-width: 35rem;
+  }
+  .container {
+    width: 35rem;
+  }
+  p {
+    line-height: 1.2;
+  }
+}
